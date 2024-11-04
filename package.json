@@ -3,5 +3,14 @@
     "express": "^4.21.1",
     "sequelize": "^6.37.5",
     "sqlite3": "^5.1.7"
-  }
+  },
+  "name": "a-day-in-the-life",
+  "version": "1.0.0",
+  "description": "> Un proiect prin care permitem studentilor sa descopere mai bine mediul de lucru al unei companii!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }
