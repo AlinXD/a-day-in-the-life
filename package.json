@@ -1,5 +1,5 @@
 {
-  "name": "bazadatesiformular",
+  "name": "a-day-in-the-life",
   "version": "1.0.0",
   "main": "db.js",
   "scripts": {
@@ -11,6 +11,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "body-parse": "^0.1.0",
     "body-parser": "^1.20.3",
     "express": "^4.21.1",
     "nodemon": "^3.1.7",
