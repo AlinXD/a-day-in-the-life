@@ -15,10 +15,25 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/form.html');
 });
 
-// Cu cele doua rute de mai jos de tip post si run se stocheaza datele inscrise in formular in baza de date.
 app.post('/submit', (req, res) => {
     const { nume, prenume, an_universitar, facultate, email, nr_telefon } = req.body;
+// Funcții de validare
+const numarok = (value) => /^\d+$/.test(value); 
+const textok = (value) => /^[a-zA-Z\s]+$/.test(value); 
 
+
+if (!textok
+(nume) || !textok(prenume) || !textok(facultate)) {
+    return res.status(400).send('Câmpurile Nume, Prenume și Facultate trebuie să conțină doar litere.');
+}
+
+if (!numarok(an_universitar) || parseInt(an_universitar) <= 0) {
+    return res.status(400).send('Anul universitar trebuie să fie un număr pozitiv.');
+}
+
+if (!numarok(nr_telefon)) {
+    return res.status(400).send('Numărul de telefon trebuie să conțină doar cifre.');
+}
     const query = `INSERT INTO students (nume, prenume, an_universitar, facultate, email, nr_telefon)
                    VALUES (?, ?, ?, ?, ?, ?)`;
     
@@ -32,5 +47,3 @@ app.post('/submit', (req, res) => {
         }
     });
 });
-
-
