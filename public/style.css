@@ -82,6 +82,18 @@ img{
     background-clip: text;
 }
 
+.button{
+    background-color:#213367;
+    color:#8224D3;
+    border: none;
+    text-align: center;
+    font-size: 32px;
+}
+
+.button:hover{
+    background-color: #6D60AA;
+}
+
 #proiect{
     margin: 80px;
     padding: 100px;
