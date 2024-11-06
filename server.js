@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Ce avem in form.html apare in site prin ruta de mai jos
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/form.html');
+    res.sendFile(__dirname + '/public/index.html');
 });
 
 app.post('/submit', (req, res) => {
