@@ -22,6 +22,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 1;
 }
 
 .logo{
@@ -70,6 +71,7 @@ img{
     padding: 0;
     width: 60%;
     display: block;
+    z-index: 0;
 }
 
 .altfel{
