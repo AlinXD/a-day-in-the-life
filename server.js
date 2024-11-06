@@ -2,19 +2,30 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const db = require('./db');
 const app = express();
-const PORT = 1234;
-// Serverul
+const PORT = 3000;
+
+// Server
 app.listen(PORT, () => {
     console.log(`Serverul rulează pe http://localhost:${PORT}`);
 });
+
 // Cu bodyParser procesam datele introduse in formular
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Ce avem in form.html apare in site prin ruta de mai jos
+//#region  RENDERING
+// Randam pagina de index
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/public/index.html');
 });
 
+// Randam pagina form 
+app.get('/form', (req,res)=>{
+    res.sendFile(__dirname + '/public/form.html');
+})
+
+//#endregion
+
+//#region SQL
 app.post('/submit', (req, res) => {
     const { nume, prenume, an_universitar, facultate, email, nr_telefon } = req.body;
 // Funcții de validare
@@ -47,3 +58,4 @@ if (!numarok(nr_telefon)) {
         }
     });
 });
+//#endregion
