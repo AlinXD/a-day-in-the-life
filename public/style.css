@@ -11,7 +11,12 @@
 body{
     background-color: #dfe6e6;
 }
-
+.flex{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
 .header{
     position: fixed;
     top: 0;
@@ -92,6 +97,7 @@ img{
     text-align: center;
     font-size: 32px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
 }
 
 .button:hover{
@@ -109,9 +115,10 @@ img{
     line-height: 2;
     background-color: #8998c7;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
 }
 
-h2{
+#project-title{
     font-size: 34px;
     text-align: center;
     background: -webkit-linear-gradient(#8224D3, #213367);
