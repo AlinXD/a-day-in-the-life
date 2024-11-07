@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+</head>
+<style>div{display: flex;align-items: center; justify-content: center;}</style>
+<body>
+    <div id="qrcode"></div>
+
+    <!-- Include the qrcode.js library via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+
+    <script>
+
+            // Get the text or URL from input
+            const text = "adayinthelife.freesite.online";
+
+            // Clear previous QR code, if any
+            document.getElementById("qrcode").innerHTML = "";
+
+            // Generate QR code
+            new QRCode(document.getElementById("qrcode"), {
+                text: text,
+                width: 256,  // QR code width
+                height: 256, // QR code height
+            });
+        
+    </script>
+</body>
+</html>
