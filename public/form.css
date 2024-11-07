@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Barrio&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #8224D3,#213367); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    margin: 0;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#main-title{
+    color: azure;
+    font-size: 2.2em;
+}
+
+form {
+    width: 25%;
+    height: 40%;
+    margin: 5% auto;
+    padding: 3%;
+    box-shadow: 0em 8em 15em rgba(33, 51, 103, 0.2);
+    transition: box-shadow 0.3s ease;
+    border-radius: 2em;
+    background-color: white;
+    margin-top: 0%;
+    margin-bottom: 0;
+    color: linear-gradient(135deg, #8224D3,#213367);
+}
+
+.buton-trimite {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #8224D3; 
+    border: none;
+    border-radius: 2em;
+    padding: 1em 2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0em 4em 6em rgba(33, 51, 103, 0.3); 
+}
+
+.titlu-formular {
+    font-family: 'Poppins', sans-serif;
+    font-size: 5vh;
+    margin-bottom: 2%;
+    margin-top: 8vh;
+    color: white;
+    text-align: center;
+    text-shadow: 1em 1em 3em rgba(130, 36, 211, 0.3);
+}
+
+input {
+    border-radius: 50em;
+    width: 20em;
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+form > label{
+    font-size: 1.4em;
+}
+
+.button{
+    background-image: linear-gradient(to bottom right, #8224D3, #213367); 
+    color:#dfe6e6;
+    border-radius: 4px;
+    border-color: #8224D3;
+    text-align: center;
+    font-size: 32px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+}

@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
     <title>Formular de Inscriere</title>
 </head>
 <body class="flex">
-    <h1>Formular de Inscriere</h1>
+    <h1 id="main-title">Formular de Înscriere</h1>
     <form action="/submit" method="POST" class="flex">
         <label for="first-name">Nume:</label>
         <input id="first-name" type="text" name="nume" required><br>
@@ -26,9 +26,9 @@
 
         <label for="phone">Număr de telefon:</label>
         <input id="phone" type="text" name="nr_telefon" required><br>
-        <h2>Numele, Prenumele și Facultatea trebuie să conțină doar litete!</h2>
-        <h2>Anul Universitar trebuie să fie un numar pozitiv!</h2>
-        <h2>Numărul de telefon trebuie să conțina doar cifre!</h2>
+        <p>Numele, Prenumele și Facultatea trebuie să conțină doar litete!<br>
+        Anul Universitar trebuie să fie un numar pozitiv!<br>
+        Numărul de telefon trebuie să conțina doar cifre!</p>
         <button type="submit" class="button">Trimite</button>
     </form>
 </body>
