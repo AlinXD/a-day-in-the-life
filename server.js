@@ -69,7 +69,7 @@ app.post('/submit', (req, res) => {
             res.status(500).send('Eroare la stocarea datelor.');
         } else {
             console.log('Student adăugat cu succes!');
-            res.send('Datele au fost stocate cu succes!');
+            res.send('<p>Datele au fost stocate cu succes!</p><button><a href="/">Acasa</a></button>');
         }
     });
 });
