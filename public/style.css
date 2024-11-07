@@ -18,9 +18,9 @@ body{
     flex-direction: column;
 }
 .header{
-    position: fixed;
+     position: fixed;
     top: 0;
-    left: 0;
+    left: 0; 
     width: 100%;
     padding: 20px 100px;
     background-color: #213367;
@@ -28,6 +28,36 @@ body{
     align-items: center;
     justify-content: space-between;
     z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .header{
+        position: relative!important;
+        width: 100%;
+        padding: 20px 100px;
+        background-color: #213367;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1;
+    }
+    .navbar a{
+        font-size: 18px;
+        color: #8224D3;
+        text-decoration: none;
+        font-weight: 500;
+        margin-left: 20px;
+    }
+    
+    .navbar a::before{
+        content: '';
+        top: 100%;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background:#8224D3;
+        transition: 0.4s;
+    }
 }
 
 .logo{
@@ -79,6 +109,15 @@ img{
     z-index: 0;
 }
 
+@media (max-width: 768px) {
+    #home{
+        margin: 0px;
+        padding: 10px;
+        font-size: 52px;
+        font-weight: 200px;
+        text-align: center;
+    }
+}
 .altfel{
     font-family: "Atma", system-ui;
     font-weight: 500;
