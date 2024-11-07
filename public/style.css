@@ -141,12 +141,12 @@ h2{
     padding: 30px 100px;
     background-color: #213367;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .fa-brands{
     color:#8224D3;
+    text-decoration: none;
 }
 
 .fa-brands:hover{
