@@ -11,15 +11,6 @@
 body{
     background-color: #dfe6e6;
 }
-.flex{
-    display: flex!important;
-}
-.align-items-center{
-    align-items: center;
-}
-.direction-column{
-    flex-direction: column;
-}
 
 .header{
     position: fixed;
